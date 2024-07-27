@@ -4,12 +4,17 @@ import Logo from './Logo';
 import Input from './Input';
 // import Link from "react-dom"
 import "./signup.css"
+import {  useState } from "react";
 
  const Signin = () => {
     const{register , handleSubmit} = useForm();
+    const[user  , setUser] = useState("")
     const create = (data) =>{
-        console.log(data);
+        setUser(data)
+    
+       
     }
+    
 
   return (
     <div className="flex items-center justify-center mb-4">
@@ -20,8 +25,7 @@ import "./signup.css"
             </span>
         </div>
         <h2 className="text-center text-2xl font-bold leading-tight">Sign up to create account</h2>
-   
-
+  
         <form onSubmit={handleSubmit(create)}>
         <div className='space-y-5'>
             <Input
@@ -57,6 +61,7 @@ import "./signup.css"
     </form>
 
     </div>
+
 
 </div>
   )
