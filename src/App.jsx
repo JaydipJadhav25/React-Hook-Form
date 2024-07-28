@@ -4,6 +4,7 @@ import Login from "../components/Login";
 // import Header from "../components/Header";
 import Signin from "../components/Signin";
 
+import RTE from "../components/RTE";
 
 
  const App = () => {
@@ -24,6 +25,7 @@ import Signin from "../components/Signin";
     <Login/>
     </Container>
    </div>
+   <RTE/>
   </>
   
   )

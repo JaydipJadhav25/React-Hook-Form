@@ -11,6 +11,7 @@ import {  useState } from "react";
     const[user  , setUser] = useState("")
     const create = (data) =>{
         setUser(data)
+        console.log(data)
     
        
     }
