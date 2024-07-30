@@ -5,6 +5,7 @@ import Login from "../components/Login";
 import Signin from "../components/Signin";
 
 import RTE from "../components/RTE";
+import PostFrom from "../components/PostFrom";
 
 
  const App = () => {
@@ -25,7 +26,8 @@ import RTE from "../components/RTE";
     <Login/>
     </Container>
    </div>
-   <RTE/>
+   {/* <RTE/> */}
+   <PostFrom/>
   </>
   
   )
